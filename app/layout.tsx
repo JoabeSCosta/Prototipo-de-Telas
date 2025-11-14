@@ -9,7 +9,7 @@ const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: "AutoTech - Plataforma de Vendas de Carros",
-  description: "Plataforma web de vendas de carros com integração IoT",
+  description: "Plataforma web de vendas de carros",
   generator: "v0.app",
 }
 
@@ -19,8 +19,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`font-sans antialiased`} suppressHydrationWarning={true}>
+    <html lang="en">
+      <body className={`font-sans antialiased`}>
         {children}
         <Analytics />
       </body>
